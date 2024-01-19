@@ -1,6 +1,6 @@
-# Trigger.h - README
+# trigger.h - README
 
-Welcome to `Trigger.h`! This lightweight C++ class enables seamless trigger mechanisms with customizable callbacks. 
+Welcome to `trigger.h`! This lightweight C++ class enables seamless trigger mechanisms with customizable callbacks. 
 
 ## How to Use this
 
