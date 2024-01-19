@@ -1,13 +1,13 @@
-# trigger.h - README
+# TRIGGER.h - README
 
-Welcome to `trigger.h`! This lightweight C++ class enables seamless trigger mechanisms with customizable callbacks. 
+Welcome to `TRIGGER.h`! This lightweight C++ class enables seamless TRIGGER mechanisms with customizable callbacks. 
 
 ## How to Use this
 
-Users can add the `trigger.h` header file to their C++ project from the GitHub repository by following these steps:
+Users can add the `TRIGGER.h` header file to their C++ project from the GitHub repository by following these steps:
 
 1. **Clone the Repository:**
-   Clone the GitHub repository containing the `trigger.h` file to your local machine using the following command in your terminal or command prompt:
+   Clone the GitHub repository containing the `TRIGGER.h` file to your local machine using the following command in your terminal or command prompt:
 
    ```bash
    git clone https://github.com/username/repository.git
@@ -16,58 +16,58 @@ Users can add the `trigger.h` header file to their C++ project from the GitHub r
    Replace `https://github.com/username/repository.git` with the actual URL of the GitHub repository.
 
 2. **Copy the Header File:**
-   Once the repository is cloned, navigate to the repository directory. Locate the `trigger.h` file and copy it to the include directory of your C++ project.
+   Once the repository is cloned, navigate to the repository directory. Locate the `TRIGGER.h` file and copy it to the include directory of your C++ project.
 
    ```bash
-   cp trigger.h /path/to/your/project/include/
+   cp TRIGGER.h /path/to/your/project/include/
    ```
 
    Replace `/path/to/your/project/include/` with the actual path to the include directory of your C++ project.
 
 3. **Include in Your Code:**
-   In your C++ source code file where you want to use `trigger.h`, include it using the following directive:
+   In your C++ source code file where you want to use `TRIGGER.h`, include it using the following directive:
 
    ```cpp
-   #include "trigger.h"
+   #include "TRIGGER.h"
    ```
 
-   Ensure that the relative path matches the location where you copied the `trigger.h` file.
+   Ensure that the relative path matches the location where you copied the `TRIGGER.h` file.
 
 4. **Build Your Project:**
-   Build your C++ project with the updated code, including the `trigger.h` file. The specific build process depends on the build system you are using (e.g., Makefile, CMake).
+   Build your C++ project with the updated code, including the `TRIGGER.h` file. The specific build process depends on the build system you are using (e.g., Makefile, CMake).
 
 ---
 
 ## Quick Start
 
-### Step 1: Include `Trigger.h` in Your Project
+### Step 1: Include `TRIGGER.h` in Your Project
 
 ```cpp
-#include "Trigger.h"
+#include "TRIGGER.h"
 ```
-_First things first! Make sure you include the Trigger.h file in your C++ project. This file contains all the magic for making triggers work._
+_First things first! Make sure you include the TRIGGER.h file in your C++ project. This file contains all the magic for making triggers work._
 
 
-### Step 2: Instantiate a Trigger Object
+### Step 2: Instantiate a TRIGGER Object
 
 ```cpp
-Trigger myTrigger;
+TRIGGER myTrigger;
 ```
-_Think of a trigger like a button you want to press. To use it, you need to create a trigger object. Let's call it myTrigger._
+_Think of a TRIGGER like a button you want to press. To use it, you need to create a TRIGGER object. Let's call it myTrigger._
 ### Step 3: Set a Callback Function
 
 ```cpp
 myTrigger.setCallback([]() {
-    std::cout << "Trigger activated!" << std::endl;
+    std::cout << "TRIGGER activated!" << std::endl;
 });
 ```
-_Now, decide what should happen when you press the button (activate the trigger). This is where the setCallback function comes in. You tell the trigger what to do when it's activated._
-### Step 4: Activate the Trigger
+_Now, decide what should happen when you press the button (activate the TRIGGER). This is where the setCallback function comes in. You tell the TRIGGER what to do when it's activated._
+### Step 4: Activate the TRIGGER
 
 ```cpp
 myTrigger.activate();
 ```
-_Now that you've set up your trigger, it's time to press the button and see what happens! Use the activate method to trigger the action you defined in the callback._
+_Now that you've set up your TRIGGER, it's time to press the button and see what happens! Use the activate method to TRIGGER the action you defined in the callback._
 
 ---
 ## Standards / __cplusplus macro
@@ -88,9 +88,9 @@ xcrun clang -x c++ -E -dM - < /dev/null | grep -F __cplusplus
   
 ---
 
-⚠️ **Warning: `trigger.h` is Not Supported in `C++98 (199711L)` :**
+⚠️ **Warning: `TRIGGER.h` is Not Supported in `C++98 (199711L)` :**
 
-The file `trigger.h` may not be supported when compiling with the C++98 standard (original C++ standard from 1998). This standard lacks certain features introduced in later versions of C++, and using `trigger.h` with C++98 may lead to compilation errors or undefined behavior.
+The file `TRIGGER.h` may not be supported when compiling with the C++98 standard (original C++ standard from 1998). This standard lacks certain features introduced in later versions of C++, and using `TRIGGER.h` with C++98 may lead to compilation errors or undefined behavior.
 
 It is recommended to compile your code with a more recent C++ standard, such as C++11, C++14, C++17, or C++20, depending on the features and language enhancements your code relies on.
 
@@ -106,7 +106,7 @@ g++ -std=c++11 your_file.cpp -o your_executable
 
 ### Callback Registration
 
-Users can register custom callbacks with the `Trigger` class using the `setCallback` method, providing the flexibility to define specific actions.
+Users can register custom callbacks with the `TRIGGER` class using the `setCallback` method, providing the flexibility to define specific actions.
 
 
 ```cpp
@@ -114,7 +114,7 @@ myTrigger.setCallback([]() {
     // Your custom action here
 });
 ```
-_Think of this as giving the trigger a job to do. You can tell it, "When you're activated, do this specific task." It's like programming the trigger to have a special skill._
+_Think of this as giving the TRIGGER a job to do. You can tell it, "When you're activated, do this specific task." It's like programming the TRIGGER to have a special skill._
 ### Activation Mechanism
 
 The `activate` method triggers the registered callback(s), allowing seamless execution of associated functionality.
@@ -122,7 +122,7 @@ The `activate` method triggers the registered callback(s), allowing seamless exe
 ```cpp
 myTrigger.activate();
 ```
-This is the actual button press! When you call myTrigger.activate();, it's like pressing the button you set up earlier. The trigger then performs the task you assigned to it.
+This is the actual button press! When you call myTrigger.activate();, it's like pressing the button you set up earlier. The TRIGGER then performs the task you assigned to it.
 ### Simple Integration
 
 Designed for ease of integration into existing C++ projects, providing a straightforward interface for setting up triggers and associated actions.
@@ -130,13 +130,13 @@ Designed for ease of integration into existing C++ projects, providing a straigh
 ## Example Usage
 
 ```cpp
-#include "Trigger.h"
+#include "TRIGGER.h"
 
 int main() {
-    Trigger myTrigger;
+    TRIGGER myTrigger;
 
     myTrigger.setCallback([]() {
-        std::cout << "Trigger activated!" << std::endl;
+        std::cout << "TRIGGER activated!" << std::endl;
     });
 
     myTrigger.activate();
@@ -190,17 +190,17 @@ g++ -std=c++14 your_file.cpp -o your_executable
 
 Replace `c++14` with the version you want to use (e.g., `c++11`, `c++17`, `c++20`).
 
-### 5. Why might `trigger.h` not be supported in C++98?
+### 5. Why might `TRIGGER.h` not be supported in C++98?
 
-`trigger.h` may not be supported in C++98 due to the lack of certain features introduced in later C++ standards. Using `trigger.h` with C++98 could lead to compilation errors or undefined behavior. It's recommended to compile code with a more recent C++ standard to benefit from additional language features and improvements.
+`TRIGGER.h` may not be supported in C++98 due to the lack of certain features introduced in later C++ standards. Using `TRIGGER.h` with C++98 could lead to compilation errors or undefined behavior. It's recommended to compile code with a more recent C++ standard to benefit from additional language features and improvements.
 
-#### 6. **Can I customize the callbacks when using the `trigger.h` header file?**
-   Yes, the `trigger.h` file supports customization. You can set your own callback functions using the provided `setCallback` method, tailoring the behavior according to your project's requirements.
+#### 6. **Can I customize the callbacks when using the `TRIGGER.h` header file?**
+   Yes, the `TRIGGER.h` file supports customization. You can set your own callback functions using the provided `setCallback` method, tailoring the behavior according to your project's requirements.
 
-#### 7. **Is the `trigger.h` header file compatible with different C++ standards?**
-   The `trigger.h` file is designed to be compatible with various C++ standards. However, it's essential to ensure that your project's C++ standard is compatible with the features used in the `trigger.h` implementation.
+#### 7. **Is the `TRIGGER.h` header file compatible with different C++ standards?**
+   The `TRIGGER.h` file is designed to be compatible with various C++ standards. However, it's essential to ensure that your project's C++ standard is compatible with the features used in the `TRIGGER.h` implementation.
 
-#### 8. **How can I contribute to the `trigger.h` project?**
+#### 8. **How can I contribute to the `TRIGGER.h` project?**
    Contributions are welcome! Fork the repository, make your changes, and submit a pull request. Feel free to reach out to the creator, Vishesh Yadav, for discussions on potential improvements or collaborations.
 
 
@@ -208,18 +208,18 @@ Replace `c++14` with the version you want to use (e.g., `c++11`, `c++17`, `c++20
 
 ## Contributions
 
-I am a passionate software developer with a deep understanding of C++ and a commitment to delivering efficient and reliable code. The creation of the trigger.h header file represents my contribution to providing essential functionality for this project.
+I am a passionate software developer with a deep understanding of C++ and a commitment to delivering efficient and reliable code. The creation of the TRIGGER.h header file represents my contribution to providing essential functionality for this project.
 
 ### About Vishesh Yadav
 
-Vishesh is a skilled software developer with a passion for creating efficient and reliable code. With a deep understanding of C++ and software engineering principles, he designed and implemented the `trigger.h` header file to provide essential functionality for the project.
+Vishesh is a skilled software developer with a passion for creating efficient and reliable code. With a deep understanding of C++ and software engineering principles, he designed and implemented the `TRIGGER.h` header file to provide essential functionality for the project.
 
 #### Contact Vishesh:
 
 - GitHub: https://github.com/vishesh9131
 - LinkedIn: www.linkedin.com/in/vishesh-yadav-aa7333192
 
-Feel free to reach out to Vishesh for any inquiries related to the `trigger.h` file or to discuss potential improvements and collaborations. Your contributions and feedback are highly appreciated.
+Feel free to reach out to Vishesh for any inquiries related to the `TRIGGER.h` file or to discuss potential improvements and collaborations. Your contributions and feedback are highly appreciated.
 ---
 
 ## License

@@ -1,4 +1,11 @@
-// Online C++ compiler to run C++ program onli
+// TRIGGER.h
+
+#ifndef TRIGGER_H
+#define TRIGGER_H
+
+
+
+
 #include <iostream>
 #include <functional>
 
@@ -16,11 +23,6 @@ private:
     std::function<void()> callback_;
 };
 
-int main() {
-    Trigger myTrigger;
-    myTrigger.setCallback([]() {
-        std::cout << "Trigger activated!" << std::endl;
-    });
-    myTrigger.activate();
-    return 0;
-}
+#endif // TRIGGER_H
+
+
