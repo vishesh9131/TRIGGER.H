@@ -13,13 +13,15 @@ Welcome to `Trigger.h`! This lightweight C++ class enables seamless trigger mech
 ```cpp
 #include "Trigger.h"
 ```
+_First things first! Make sure you include the Trigger.h file in your C++ project. This file contains all the magic for making triggers work._
+
 
 ### Step 2: Instantiate a Trigger Object
 
 ```cpp
 Trigger myTrigger;
 ```
-
+_Think of a trigger like a button you want to press. To use it, you need to create a trigger object. Let's call it myTrigger._
 ### Step 3: Set a Callback Function
 
 ```cpp
@@ -27,12 +29,13 @@ myTrigger.setCallback([]() {
     std::cout << "Trigger activated!" << std::endl;
 });
 ```
-
+_Now, decide what should happen when you press the button (activate the trigger). This is where the setCallback function comes in. You tell the trigger what to do when it's activated._
 ### Step 4: Activate the Trigger
 
 ```cpp
 myTrigger.activate();
 ```
+_Now that you've set up your trigger, it's time to press the button and see what happens! Use the activate method to trigger the action you defined in the callback._
 
 ## Features
 
@@ -40,12 +43,13 @@ myTrigger.activate();
 
 Users can register custom callbacks with the `Trigger` class using the `setCallback` method, providing the flexibility to define specific actions.
 
+
 ```cpp
 myTrigger.setCallback([]() {
     // Your custom action here
 });
 ```
-
+_Think of this as giving the trigger a job to do. You can tell it, "When you're activated, do this specific task." It's like programming the trigger to have a special skill._
 ### Activation Mechanism
 
 The `activate` method triggers the registered callback(s), allowing seamless execution of associated functionality.
@@ -53,7 +57,7 @@ The `activate` method triggers the registered callback(s), allowing seamless exe
 ```cpp
 myTrigger.activate();
 ```
-
+This is the actual button press! When you call myTrigger.activate();, it's like pressing the button you set up earlier. The trigger then performs the task you assigned to it.
 ### Simple Integration
 
 Designed for ease of integration into existing C++ projects, providing a straightforward interface for setting up triggers and associated actions.
